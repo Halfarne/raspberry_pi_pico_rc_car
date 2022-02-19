@@ -40,19 +40,19 @@ def demo(nrf):
             got = struct.unpack("i", buf)[0]
             print("rx", got)
             if got == 2 :
-                print("dopredu")
+                print("forward")
                 m1p1(1)
                 m2p1(1)
             if got == 1 :
-                print("dozadu")
+                print("backward")
                 m1p2(1)
                 m2p2(1)
             if got == 4 :
-                print("doprava")
+                print("right")
                 m1p1(1)
                 m2p2(1)
             if got == 3 :
-                print("doleva")
+                print("left")
                 m2p2(1)
                 m1p1(1)
             if got == 0:
