@@ -11,9 +11,9 @@ ce  = Pin(14, Pin.OUT, value=0)
 jsy1 = machine.ADC(26)
 jsx1 = machine.ADC(27)
 
-m1p1 = Pin(18, Pin.OUT) #motor1 frontwards
+m1p1 = Pin(18, Pin.OUT) #motor1 forwards
 m1p2 = Pin(19, Pin.OUT) #motor1 backwards
-m2p1 = Pin(20, Pin.OUT) #motor2 frontwards
+m2p1 = Pin(20, Pin.OUT) #motor2 forwards
 m2p2 = Pin(21, Pin.OUT) #motor2 backwards
 m1e = Pin(16, Pin.OUT) #motor1 enabled
 m2e = Pin(17, Pin.OUT) #motor2 enabled
