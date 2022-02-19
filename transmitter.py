@@ -29,13 +29,13 @@ def demo(nrf):
         
         s = 0
         if xV1 >= 60000 and xV2 >= 60000 :
-            s = 1
+            s = 1 # both motors forward
         elif xV1 <= 600 and xV2 <= 600  :
-            s = 2
+            s = 2 # both motors backwards
         if xV2 >= 60000 and xV1 <= 600 :
-            s = 3
+            s = 3 # first forward second backwards
         elif xV2 <= 600 and xV1 >= 60000 :
-            s = 4
+            s = 4 # first motor backwards second forward
 
         nrf.send(struct.pack("i", s))
         print(s)
